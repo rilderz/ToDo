@@ -15,7 +15,7 @@ const searchInput = document.getElementById("searchInput");
 
 const modal = document.getElementById("editModal");
 
-/* SAVE */
+/* SAVING */
 function saveTasks(){
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
@@ -31,7 +31,7 @@ function showToast(msg){
     }, 2000);
 }
 
-/* ADD TASK */
+/* ADDING TASK */
 function addTask(){
 
     const text = taskInput.value.trim();
@@ -70,7 +70,7 @@ function toggleTask(id){
     render();
 }
 
-/* DELETE */
+/* DELETING */
 function deleteTask(id){
 
     tasks = tasks.filter(t => t.id !== id);
